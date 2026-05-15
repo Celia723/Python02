@@ -6,10 +6,10 @@ def input_temperature(temp_str: str) -> int:
     elif (temp < 0):
         raise ValueError(f"{temp}°C is too cold for plants (min 0°C)")
     else:
-       return temp
+        return temp
 
 
-def test_temperature():
+def test_temperature() -> None:
     print("=== Garden Temperature ===")
     tests = ["25", "abc", "100", "-50"]
     print()
